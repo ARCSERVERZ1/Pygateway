@@ -1,0 +1,2 @@
+ID	Time_Stamp	Date	Shift_Id	Line_Code	Machine_Code	Variant_Code	Machine_Status	OK_Parts	NOK_Parts	Rework_Parts	Rejection_Reasons	Auto__Mode_Selected	Manual_Mode_Slected	Auto_Mode_Running	CompanyCode	PlantCode	OperatorID	Live_Alarm	Live_Loss	Batch_code
+190346	2024-04-23 23:00:37.067	2024-04-23	S2	MNAL01	M6	V1	3	486	0	0	reason	1	0	0	TEAL_DTVS	TEAL_DTVS01	0			B2024-04-23T22:26:37.715

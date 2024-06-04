@@ -1,0 +1,35 @@
+{
+  "plc_count": [0],
+  "plc_config": [
+      {
+          "name": "plc-1",
+          "refresh_rate": "1000",
+          "IP": "opc.tcp://172.22.58.223:4840",
+          "username": "TVS",
+          "password": "Tvs@123",
+          "Tags": {
+              "OP20_automode_running": "ns=2;i=2",
+              "OP20_automode_selected": "ns=2;i=3",
+              "OP20_manualmode_selected": "ns=2;i=5",
+              "OP20_error_active": "ns=2;i=4",
+              "OP20_warning_active": "ns=2;i=24",
+              "OP20_break": "ns=2;i=10",
+              "OP20_variantNumber": "ns=2;i=9",
+              "OP20_shift": "ns=2;i=9",
+              "OP20_OK_parts": "ns=2;i=7",
+              "OP20_NOT_parts": "ns=2;i=11",
+              "OP20_Rej_Reason_1": "ns=2;i=13",
+              "OP20_Total_parts": "ns=2;i=34",
+              "OP20_theoretical_cycletime": "ns=2;i=8",
+              "OP20_actualCycletime": "ns=2;i=22",
+              "OP20_AlmWord_1": "ns=2;i=17",
+              "OP20_loss_L1": "ns=2;i=12",
+              "OP20_Tool1": "ns=2;i=26",
+              "OP20_Tool2": "ns=2;i=27",
+              "OP20_Tool3": "ns=2;i=28",
+              "OP20_Tool4": "ns=2;i=29",
+              "OP20_Tool5": "ns=2;i=30"
+          }
+      }
+  ]
+}

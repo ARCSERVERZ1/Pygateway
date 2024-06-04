@@ -1,0 +1,11 @@
+{
+    "refresh_rate": "1000",
+    "raw_csv_refresh_rate": "30000",
+    "cycle_csv_refresh_rate": "60000",
+    "critical_csv_refresh_rate": "60000",
+    "tool_csv_refresh_rate": "60000",
+    "alarm_csv_refresh_rate": "60000",
+    "plc_url": "http://192.168.150.73:3001",
+    "database_config":"production"
+
+}
