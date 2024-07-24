@@ -1,0 +1,12 @@
+{
+            "ACTIVE_LINES": ["SUB01"],
+            "FOLDER_PATH": "E:Wakanda/IIOT/",
+            "TOKEN_URL": "https://tealdatalogging.azurewebsites.net/api/Values/Check_login?device_id=2123-0377-21",
+            "TABLE_URL": "https://tealdatalogging.azurewebsites.net/api/Values/Insert",
+            "gen_table_list": ["CTIndex"],
+            "swift_table_list": ["RawTable"],
+            "diag_pc_line": "HH01",
+            "rotating_logs": 3,
+            "run_status": 1,
+            "py_diag": 0
+        }

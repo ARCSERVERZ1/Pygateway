@@ -1,77 +1,30 @@
 {
-    "plc_count":[0,1],
-    "plc_config":[
-    {
-            "name":"plc-1",
-            "refresh_rate":"1000",
-            "IP":"opc.tcp://192.168.1.170:4840",
-            "username":"TVS",
-            "password":"Tvs@123",
-            "Tags":{
-                "stn180_automode_running":"ns=4;i=5",
-                "stn180_automode_selected":"ns=4;i=6",      
-                "stn180_manualmode_selected":"ns=4;i=7", 
-                "stn180_error_active":"ns=4;i=8",
-                "stn180_break":"ns=4;i=9",      
-                "stn180_warning_active":"ns=4;i=10", 
-                "stn180_variantNumber":"ns=4;i=11",
-                "stn180_OK_parts":"ns=4;i=12",      
-                "stn180_shift":"ns=4;i=13",                
-                "stn180_NOT_parts":"ns=4;i=14",
-                "stn180_Total_parts":"ns=4;i=15",      
-                "stn180_Rej_Reason_1":"ns=4;i=16",
-                "stn180_AlmWord_1":"ns=4;i=17",
-                "stn180_AlmWord_2":"ns=4;i=18",
-                "stn180_AlmWord_3":"ns=4;i=19",               
-                "stn180_theoretical_cycletime":"ns=4;i=20",
-                "stn180_actualCycletime":"ns=4;i=21",
-                "stn190_automode_running":"ns=5;i=5",
-                "stn190_automode_selected":"ns=5;i=6",      
-                "stn190_manualmode_selected":"ns=5;i=7", 
-                "stn190_error_active":"ns=5;i=8",
-                "stn190_break":"ns=5;i=9",      
-                "stn190_warning_active":"ns=5;i=10", 
-                "stn190_variantNumber":"ns=5;i=11",
-                "stn190_OK_parts":"ns=5;i=12",      
-                "stn190_shift":"ns=5;i=13",                
-                "stn190_NOT_parts":"ns=5;i=14",
-                "stn190_Total_parts":"ns=5;i=15",      
-                "stn190_Rej_Reason_1":"ns=5;i=16",
-                "stn190_AlmWord_1":"ns=5;i=17",
-                "stn190_AlmWord_2":"ns=5;i=18",
-                "stn190_AlmWord_3":"ns=5;i=19",               
-                "stn190_theoretical_cycletime":"ns=5;i=20",
-                "stn190_actualCycletime":"ns=5;i=21"
-            }          
-        },
-        
-        {
-            "name":"plc-2",
-            "refresh_rate":"1000",
-            "IP":"opc.tcp://192.168.1.150:4840",
-            "username":"TVS",
-            "password":"Tvs@123",
-            "Tags":{
-                "stn170_automode_running":"ns=4;i=5",
-                "stn170_automode_selected":"ns=4;i=6",      
-                "stn170_manualmode_selected":"ns=4;i=7", 
-                "stn170_error_active":"ns=4;i=8",
-                "stn170_break":"ns=4;i=9",      
-                "stn170_warning_active":"ns=4;i=10", 
-                "stn170_variantNumber":"ns=4;i=11",
-                "stn170_OK_parts":"ns=4;i=12",      
-                "stn170_shift":"ns=4;i=13",                
-                "stn170_NOT_parts":"ns=4;i=14",
-                "stn170_Total_parts":"ns=4;i=15",      
-                "stn170_Rej_Reason_1":"ns=4;i=16",
-                "stn170_AlmWord_1":"ns=4;i=17",
-                "stn170_AlmWord_2":"ns=4;i=18",
-                "stn170_AlmWord_3":"ns=4;i=19",               
-                "stn170_theoretical_cycletime":"ns=4;i=20",
-                "stn170_actualCycletime":"ns=4;i=21"
-                
-            }          
-        }     
-        
-    ]   
+  "line_settings": {
+    "line_code": "SUB01",
+    "plant_code": "TEAL_DTVS01",
+    "company_code": "TEAL_DTVS",
+    "DA_path": "E:Wakanda/IIOT/",
+    "Shift_1_time": ["7:45", "14:15",0],
+    "Shift_2_time": ["14:15", "00:15", 1],
+    "Shift_3_time": ["00:15", "7:45", 0]
+  },
+  "OP10-PLC": {
+    "guide_lines": ["time in mills"],
+    "refresh_rate": 1000,
+    "IP": "opc.tcp://192.168.119.6:4840",
+    "connection_retry_time":5000,
+    "username": "",
+    "password": "",
+    "machine_code": {"stn1": "1"},
+    "Tags": {
+      "stn1_automode_running": "ns=4;s=Stn1_AutoMode_Running",
+      "stn1_automode_selected": "ns=4;s=Stn1_AutoMode_Selected",
+      "stn1_manualmode_selected": "ns=4;s=Stn1_ManualMode_Selected",
+      "stn1_error_active": "ns=4;s=Stn1_Error_Active",
+      "stn1_OK_parts": "ns=4;s=Stn1_OkParts_Total",
+      "stn1_NOT_parts": "ns=4;s=Stn1_NOkParts_Total",
+      "stn1_Total_parts": "ns=4;s=Stn1_TotalParts_Total",
+      "stn1_variantNumber": "ns=4;s=Stn1_Model_Number"
+    }
+  }
 }
